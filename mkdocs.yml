@@ -2,3 +2,6 @@ site_name: Tour
 site_url: https://interset-wq.github.io-tour
 theme:
   name: material
+nav:
+  - Home: index.md
+  - Test: test.md
