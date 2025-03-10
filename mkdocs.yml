@@ -1,6 +1,5 @@
 site_name: Tour
-site_url: https://interset-wq.github.io-tour
-lang: zh
+site_url: https://interset-wq.github.io/interset-wq.github.io-tour
 theme:
   name: material
   custom_dir: overrides
@@ -10,27 +9,57 @@ theme:
     - navigation.instant.progress
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.path
+    - navigation.expand
+    - navigation.prune
+    - navigation.indexes
+    - toc.integrate 
+    - navigation.top
+    - search.suggest
+    - search.share
+    - social
+    - navigation.footer
   palette:
-
-    # Palette toggle for light mode
+    # 夜间模式
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: material/weather-night
+        name: 切换到夜间模式
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: material/weather-sunny
+        name: 切换到白天模式
 
 extra:
   consent:
-    title: Cookie consent
+    title: 欢迎
     description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+      欢迎访问我的网站,我在这里记录我的学习。学习是一场无止境的旅行,在这场旅行中总要留下一些纪念。
+    actions:
+      - accept
+  social:
+    # 社交网站图标
+    - icon: fontawesome/brands/github 
+      link: https://github.com/interset-wq
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:d111kc@foxmail.com
+
+copyright: Copyright &copy; 2024 - 2025 by D111KC
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+markdown_extensions:
+  - abbr
+  - admonition
+nav:
+  - 主页:
+    - index.md 
+  - GUI:
+    - GUI/test.md
+    - GUI/python.md 
+
