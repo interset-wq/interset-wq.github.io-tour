@@ -1,5 +1,5 @@
 site_name: Tour
-site_url: https://interset-wq.github.io/interset-wq.github.io-tour
+site_url: https://interset-wq.github.io/
 theme:
   name: material
   custom_dir: overrides
